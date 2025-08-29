@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhai Briyani</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Header -->
+    <header>
+      <div class="responsiveness">
+        <nav class="nav-bar">
+          <div class="logo-container" href="#hero">
+            <img src="./Image/logo.png" class="logo-img" alt="logo"/>
+            <div class="logo-name-container">
+              <p class="logo-name">Bhai</p>
+              <p class="logo-name">Briyani</p>
+            </div>
+          </div>
+
+          <div class="loc-order-delivery-con-lg">
+            <div class="loc-order-container">
+              <p class="location">Location</p>
+              <button class="order-now-btn">
+                <img class="order-now-icon" src="./Image/clock.png" alt="clock"/>
+                Order Now
+              </button>
+            </div>
+            <p class="delivery">
+              <img src="./Image/scooter.png" alt="scooter" class="delivery-icon">
+              Delivery
+            </p>
+          </div>
+
+          <ul class="nav-list-lg">
+            <li class="nav-item">
+              <a href="#search">Search</a>
+            </li>
+            <li class="nav-item">
+              <a href="#outlets">Outlets</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="menu-nav">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#bookATable">Book A Table</a>
+            </li>
+          </ul>
+
+          <div class="login-menu-container">
+            <button class="login-btn" type="button">
+              <img class="login-icon" src="./Image/login-icon.png" alt="login-icon"/>
+              Login
+            </button>
+            <i class='bx bx-menu' id="menuIcon"></i>
+
+            <ul class="nav-list">
+              <div class="loc-order-delivery-con">
+                <div class="loc-order-container">
+                  <p class="location">Location</p>
+                  <button class="order-now-btn">
+                    <img class="order-now-icon" src="./Image/clock.png" alt="clock"/>
+                    Order Now
+                  </button>
+                </div>
+                <p class="delivery">
+                  <img src="./Image/scooter.png" alt="scooter" class="delivery-icon">
+                  Delivery
+                </p>
+              </div>
+              <li class="nav-item">
+                <a href="#search">Search</a>
+              </li>
+              <li class="nav-item">
+                <a href="#outlets">Outlets</a>
+              </li>
+              <li class="nav-item">
+                <a href="#menu" class="menu-nav">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="#bookATable">Book A Table</a>
+              </li>
+            </ul>
+          </div>
+        </nav>  
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="hero">
+
+      <!-- Hero -->
+      <div class="hero-responsiveness">
+
+        <div class="hero-content">
+          <h1 class="hero-heading">Royal <br /> Biryani Bliss</h1>
+          <p class="hero-des">Savor the rich aroma, bold spices, and melt-in-your-mouth goodness of our authentic, 
+            handcrafted biryani!</p>
+          <div class="order-now-container">
+            <span class="yellow"><img src="./Image/arrow.png" alt="arrow" class="arrow"/></span>
+            <button class="order-now-btn-red">Order Now</button>
+            <p class="tag-biryani">Mutton Biryani</p>
+            <p class="hero-price">$15</p>
+          </div>
+          <div class="our-support">
+            <div class="our-support-card">
+              <img class="support-img" src="./Image/deliver-bus.png" alt="support-img"/>
+              <p class="support-title">Freshly <br /> Made</p>
+            </div>
+            <div class="our-support-card">
+              <img class="support-img" src="./Image/deliver-bus.png" alt="support-img"/>
+              <p class="support-title">Authentic <br /> Flavors</p>
+            </div>
+            <div class="our-support-card">
+              <img class="support-img" src="./Image/deliver-bus.png" alt="support-img"/>
+              <p class="support-title">Fast <br /> Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-img-container">
+          <div class="img-container">
+            <img src="./Image/hero-img.png" alt="hero-image" class="hero-img active"/>
+            <img src="./Image/hero-img.png" alt="hero-image" class="hero-img"/>
+            <img src="./Image/hero-img.png" alt="hero-image" class="hero-img"/>
+            <img src="./Image/hero-img.png" alt="hero-image" class="hero-img"/>
+            <img src="./Image/hero-img.png" alt="hero-image" class="hero-img"/>
+          </div>
+          <div class="img-tab-container">
+            <div class="tab-container active">
+              <img src="./Image/tab-img.png" class="tab-img" alt="tab-img"/>
+            </div>
+            <div class="tab-container">
+              <img src="./Image/tab-img.png" class="tab-img" alt="tab-img"/>
+            </div>
+            <div class="tab-container">
+              <img src="./Image/tab-img.png" class="tab-img" alt="tab-img"/>
+            </div>
+            <div class="tab-container">
+              <img src="./Image/tab-img.png" class="tab-img" alt="tab-img"/>
+            </div>
+            <div class="tab-container">
+              <img src="./Image/tab-img.png" class="tab-img" alt="tab-img"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Store -->
+      <div class="story-container">
+        <h2 class="sub-heading">A Taste That Tells a Story</h2>
+        <div class="story-and-img">
+          <p class="story-des">From the royal kitchens of the Mughals to the bustling streets of Hyderabad, our biryani carries a legacy of flavor and culture. 
+            Made with age-old recipes and premium ingredients, every serving is a tribute to authenticity.</p>
+          <div class="story-img-container">
+            <img src="./Image/story-img1.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img2.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img3.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img4.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img5.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img1.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img2.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img5.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img3.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img4.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img1.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img2.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img3.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img5.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img3.png" alt="after-img" class="food-story" />
+            <img src="./Image/story-img4.png" alt="after-img" class="food-story" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Special -->
+      <div class="special-container">
+        <h2 class="sub-heading">What Makes Our Biryani Special?</h2>
+        <div class="special-card">
+          <h1 class="card-heading">We are Famous <br /> in Spice</h1>
+        </div>
+      </div>
+
+      <!-- Signature -->
+      <div class="signature-container">
+        <h2 class="sub-heading">Signature Food Loved by Thousands</h2>
+        
+        <div class="signature-content-container">
+          <div class="s-left-container">
+            <div class="signature-tab">
+              <img src="./Image/biryani.png" alt="biryani" class="s-tab-img"/>
+              <p>Biryani</p>
+            </div>
+            <div class="signature-tab s-active">
+              <img src="./Image/biryani.png" alt="biryani" class="s-tab-img"/>
+              <p>Fired Rice</p>
+            </div>
+            <div class="signature-tab">
+              <img src="./Image/biryani.png" alt="biryani" class="s-tab-img"/>
+              <p>Fries</p>
+            </div>
+            <div class="signature-tab">
+              <img src="./Image/biryani.png" alt="biryani" class="s-tab-img"/>
+              <p>Combo</p>
+            </div>
+          </div>
+        
+          <div class="s-right-container">
+            <div class="s-right-track">
+
+              <div class="right-slider active">
+                <div class="s-right-content">
+                  <h3 class="s-heading">Hyderabadi <br /> Dum Biryani</h3>
+                  <p class="s-recip">A fragrant mix of basmati rice, marinated meat, 
+                    and saffron, slow-cooked to perfection in traditional dum style.</p>
+                  <div class="order-now-container">
+                    <span class="yellow"><img src="./Image/arrow.png" alt="arrow" class="arrow"/></span>
+                    <button class="order-now-btn-red">Order Now</button>
+                    <button class="left-arrow-btn">
+                      <img src="./Image/lessthan.png" alt="left-arrow" class="s-arrow" />
+                    </button>
+                    <button class="right-arrow-btn">
+                      <img src="./Image/greaterthan.png" alt="right-arrow" class="s-arrow" />
+                    </button>
+                  </div>
+                </div>
+                <div class="banner-image-con">
+                  <img src="./Image/foodbanner.png" alt="food-banner" class="food-banner" />
+                </div>
+              </div>
+
+              <div class="right-slider">
+                <div class="s-right-content">
+                  <h3 class="s-heading">Lucknowi <br /> Biryani</h3>
+                  <p class="s-recip">A fragrant mix of basmati rice, marinated meat, 
+                    and saffron, slow-cooked to perfection in traditional dum style.</p>
+                  <div class="order-now-container">
+                    <span class="yellow"><img src="./Image/arrow.png" alt="arrow" class="arrow"/></span>
+                    <button class="order-now-btn-red">Order Now</button>
+                    <button class="left-arrow-btn">
+                      <img src="./Image/lessthan.png" alt="left-arrow" class="s-arrow" />
+                    </button>
+                    <button class="right-arrow-btn">
+                      <img src="./Image/greaterthan.png" alt="right-arrow" class="s-arrow" />
+                    </button>
+                  </div>
+                </div>
+                <div class="banner-image-con">
+                  <img src="./Image/foodbanner.png" alt="food-banner" class="food-banner" />
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Customers -->
+      <div class="customers-container">
+        <h2 class="sub-heading">What Our Customers Say</h2>
+        <div class="customers-review-con">
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review">"Absolutely the best biryani! The flavors are authentic, and the portions are generous."</p>
+            <p class="reviewer-name">–Aarav M.</p>
+            <div class="stars-container">
+              <img src="./Image/star.png" alt="star" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mandhi -->
+      <div class="mandhi-container">
+        <div class="res-container">
+          <div class="mandhi-content">
+            <p class="mandhi-com">A Feast of Flavors!</p>
+            <h1 class="mandhi-h">MANDHI</h1>
+            <p class="mandhi-des">A flavorful Yemeni-style rice dish with tender, 
+              slow-cooked meat, aromatic spices, and a smoky essence, served with tangy sauces</p>
+            <div class="order-now-container">
+              <span class="yellow-white"><img src="./Image/arrow-y.png" alt="arrow" class="arrow"/></span>
+              <button class="order-now-btn-red">Order Now</button>
+            </div>    
+          </div>
+          <div class="mandhi-banner-container">
+            <img src="./Image/mandhi-banner.png" alt="mandhi banner" class="mandhi-img"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQs -->
+      <div class="faqs-container">
+        <div class="faqs-left">
+          <h1 class="faqs-heading">FAQs</h1>
+          <p class="faqs-des">For any further inquiries about our menu, orders, or catering services, 
+            please feel free to get in touch with us</p>
+          <p class="faqs-email">bhaibiryani03@gmail.com</p>
+        </div>
+        <div class="faqs-right">
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>How can I place an order?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>Do you offer home delivery?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>Can I customize my biryani?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>Do you have family packs or bulk orders?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>What payment options do you accept?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>What if i have an issue with my order?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+          <div class="faqs-con">
+            <div class="faqs-qus">
+              <p>How can i contact customer support?</p>
+              <button class="down-arrow-btn">
+                <img src="./Image/down-arrow.png" alt="up down arrow" class="up-down-arrow" />
+              </button>
+            </div>
+            <div class="faqs-ans">
+              <p>Yes! Coding is like building with blocks. You can learn step by step, 
+                even if you're new.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Menu -->
+    <section id="menu">
+      <img class="menu-banner" src="./Image/menu-banner.png" alt="menu-banner"/>
+      <div class="menu-responsiveness">
+        <!-- Offers -->
+        <div class="offers-container">
+          <h2 class="menu-heading">Offers</h2>
+          <div class="offers-details-container">
+            <div class="offers-details-card-white">
+              <img src="./Image/percentage.png" alt="precentage-icon" />
+              <div class="offer-content">
+                <h6 class="offer-h">FLAT 25% OFF on Take Away Orders</h6>
+                <p class="offer-des">No minimum order amount.</p>
+              </div>
+            </div>
+
+            <div class="offers-details-card-yellow">
+              <img src="./Image/percentage.png" alt="precentage-icon" />
+              <div class="offer-content">
+                <h6 class="offer-h">FLAT 25% OFF on Take Away Orders</h6>
+                <p class="offer-des">No minimum order amount.</p>
+              </div>
+            </div>
+
+            <div class="offers-details-card-white">
+              <img src="./Image/percentage.png" alt="precentage-icon" />
+              <div class="offer-content">
+                <h6 class="offer-h">FLAT 25% OFF on Take Away Orders</h6>
+                <p class="offer-des">No minimum order amount.</p>
+              </div>
+            </div>
+
+            <div class="offers-details-card-yellow">
+              <img src="./Image/percentage.png" alt="precentage-icon" />
+              <div class="offer-content">
+                <h6 class="offer-h">FLAT 25% OFF on Take Away Orders</h6>
+                <p class="offer-des">No minimum order amount.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Categories -->
+        <div class="categories-container">
+          <h2 class="menu-heading">Categories</h2>
+          <div class="categories-container-list">
+            <div class="categorie-card">
+              <img src="./Image/category-1.png" alt="categorie" />
+              <p class="categorie">Lunch Combo Starting @299</p>
+            </div>  
+            <div class="categorie-card">
+              <img src="./Image/category-2.png" alt="categorie" />
+              <p class="categorie">Hyderabadi Biryani</p>
+            </div>  
+            <div class="categorie-card">
+              <img src="./Image/category-3.png" alt="categorie" />
+              <p class="categorie">EveryDay Biryani</p>
+            </div>  
+            <div class="categorie-card">
+              <img src="./Image/category-4.png" alt="categorie" />
+              <p class="categorie">Kebabs</p>
+            </div>  
+          </div>
+        </div>
+        <!-- Combos -->
+        <div class="combos-container">
+          <h2 class="menu-heading">Lunch Combos starting @299</h2>
+          
+          <div class="combos-container-list">
+            <div class="combo-card">
+              <img src="./Image/combo-1.png" alt="combo-img" class="combo-img"/>
+              <div class="combo-details">
+                <p class="combo">Dal Makhani [400gms] + 4 Rumali Roti + [1pc] Gulab Jamun</p>
+                <p class="combo-lebel">504 People ordered in the last week</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹299</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/combo-2.png" alt="combo-img" class="combo-img"/>
+              <div class="combo-details">
+                <p class="combo">Paneer Nawabi [500gms] + 4 Rumali Roti + [1pc] Gulab Jamun</p>
+                <p class="combo-lebel">504 People ordered in the last week</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹329</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Hyderabadi -->
+        <div class="Hyderabadi-container">
+          <h2 class="menu-heading">Hyderabadi Biryani</h2>
+
+          <div class="h-combos-container-list">
+            <div class="combo-card">
+              <img src="./Image/hyderabadi-1.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Veg Hyderabadi Biryani [1/2 Kg]</p>
+                <p class="combo-des">Serves 1-2 Fresh vegetables are marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice in the handi and slow cooked</p>
+                <p class="combo-lebel">504 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹389</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/hyderabadi-2.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Veg Hyderabadi Dum Biryani [1Kg]</p>
+                <p class="combo-des">Serves 2-3 Available in 1/2 kg and 1kg. Fresh 
+                  vegetables are marinated in a mixture of freshly ground BBK spices & layered with long grain basmati rice.</p>
+                <p class="combo-lebel">2096 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹699</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/hyderabadi-3.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Paneer Hyderabadi Dum [1/2 Kg]</p>
+                <p class="combo-des">Serves 1-2 (Contains 8-10 pieces of paneer) Fresh paneer
+                  pieces marinated in freshly ground BBK spices and layered with premium long grain rice.</p>
+                <p class="combo-lebel">4136 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹429</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/hyderabadi-4.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">[1Kg] Paneer Hyderabadi Dum</p>
+                <p class="combo-des">Serves 2-3 Fresh paneer pieces marinated in freshly ground BBK spices and 
+                  layered with premium long grain rice & dum cooked in a sealed handi.</p>
+                <p class="combo-lebel">924People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹759</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Everyday -->
+        <div class="everyday-container">
+          <h2 class="menu-heading">Everyday Biryani Combos</h2>
+          
+          <div class="combos-container-list">
+            <div class="combo-card">
+              <img src="./Image/everyday-1.png" alt="combo-img" class="combo-img"/>
+              <div class="combo-details">
+                <p class="combo">Veg Biryani Combo</p>
+                <p class="combo-des">Veg Hyderabadi Biryani [1/2 Kg] + Choice of Veg Galouti Kebab / Crispy Corn Sticks + 2 Thums Up [250 ml]</p>
+                <p class="combo-lebel">548 People ordered in the last week</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹729</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/everyday-2.png" alt="combo-img" class="combo-img"/>
+              <div class="combo-details">
+                <p class="combo">Paneer Biryani Combo</p>
+                <p class="combo-des">Paneer Hyderabadi Biryani [1/2 Kg] + Choice of Veg Galouti Kebab / Crispy Corn Sticks + 2 Thums Up [250 ml]</p>
+                <p class="combo-lebel">562 People ordered in the last week</p>
+              
+                <div class="price-add-container">
+                  <h4 class="price">₹738</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Kebabs -->
+        <div class="kebabs-container">
+          <h2 class="menu-heading">Kebabs</h2>
+
+          <div class="h-combos-container-list">
+            <div class="combo-card">
+              <img src="./Image/kebabs-1.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Veg Platter + 2 x Rumali Roti</p>
+                <p class="combo-des">Includes: 4 pcs Veg Galouti, 4 pcs Kaju Seekh, 3 pcs Crispy Corn Stick, 4 pcs Kasturi Paneer. Served with spicy dip, mint chutney & onion salad. + 2 Rumali Roti</p>
+                <p class="combo-lebel">567 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹649</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/kebabs-2.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Crispy Corn Stick [6 pcs]</p>
+                <p class="combo-des">Includes: 4 pcs Veg Galouti, 4 pcs Kaju Seekh, 3 pcs Crispy Corn Stick, 4 pcs Kasturi Paneer. Served with spicy dip, mint chutney & onion salad. + 2 Rumali Roti</p>
+                <p class="combo-lebel">2096 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹649</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/kebabs-3.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Veg Galouti Kebab [6 pcs]</p>
+                <p class="combo-des">A Lucknowi specialty made by marinating finely ground fresh vegetables with exotic spices. Served with laccha pyaaz and mint chutney.</p>
+                <p class="combo-lebel">1112 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹329</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="combo-card">
+              <img src="./Image/kebabs-4.png" alt="combo-img" class="combo-img" />
+              <div class="combo-details">
+                <p class="combo">Veg Kaju Seekh [250 gms]</p>
+                <p class="combo-des">Includes: 250 gms of Veg Kaju Seekh</p>
+                <p class="combo-lebel">818 People ordered in the last week</p>
+                <p class="combo-offer">Get Rs 120 OFF | Use code: BBK120</p>
+
+                <div class="price-add-container">
+                  <h4 class="price">₹759</h4>
+                  <button class="add-btn">Add +</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Cities -->
+        <div class="cities-container">
+          <h2 class="menu-heading">Biryani By Kilo - Cities We are Serving</h2>
+          <ul class="cities-list">
+            <li class="city">Amritsar</li>
+            <li class="city">Agra</li>
+            <li class="city">Bhopal</li>
+            <li class="city">Bhubaneswar</li>
+            <li class="city">Chandigarh</li>
+            <li class="city">Dhanbad</li>
+            <li class="city">Durgapur</li>
+            <li class="city">Dehradun</li>
+            <li class="city">Gurgaon</li>
+            <li class="city">Ghaziabad</li>
+            <li class="city">Greater Noida</li>
+            <li class="city">Guwahati</li>
+            <li class="city">Gorakhpur</li>
+            <li class="city">Gwalior</li>
+            <li class="city">Goa</li>
+            <li class="city">Hyderabad</li>
+          </ul>
+        </div>
+        <!-- Order -->
+
+        <div class="overlay"></div>
+        <div class="order-container">
+          <span class="close-btn">✖</span>
+          <div class="order-contents">
+            <div class="product-details-container">
+              <img src="" alt="product image" class="product-image" />
+              <div class="product-name-price-con">
+                <p class="product-name"></p>
+                <p class="product-price"></p>
+              </div>
+              <p class="product-des"></p>
+            </div>
+            <div class="product-details-container-right">
+              <div class="choose-quantity-container">
+                <p class="choose-h">Choose Quantity (select any 1)</p>
+                <div class="Quantity-options">
+                  <div class="quantity-card">
+                    <p class="quantity-name"></p>
+                    <div class="input-con">
+                      <p class="quantity-price"></p>
+                      <input type="radio" class="radio" checked/>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+              <div class="accompaniment">
+                <h5 class="accompaniment-heading">Choose Your free Accompaniment</h5>
+                <div class="accompaniment-card">
+                  <div class="accompaniment-img-con">
+                    <img src="./Image/a-img-1.png" alt="Raita" class="a-image" />
+                    <p class="accompaniment-name">Raita</p>
+                  </div>
+                  <div class="free-input-con">
+                    <p class="free">₹0</p>
+                    <input type="radio" class="radio" />
+                  </div> 
+                </div>
+                <div class="accompaniment-card">
+                  <div class="accompaniment-img-con">
+                    <img src="./Image/a-img-2.png" alt="Salna" class="a-image" />
+                    <p class="accompaniment-name">Salna</p>
+                  </div>
+                  <div class="free-input-con">
+                    <p class="free">₹0</p>
+                    <input type="radio" class="radio" />
+                  </div> 
+                </div>
+                <div class="accompaniment-card">
+                  <div class="accompaniment-img-con">
+                    <img src="./Image/a-img-3.png" alt="Biryani" class="a-image" />
+                    <p class="accompaniment-name">I Love Biryani without adding anything</p>
+                  </div>
+                  <div class="free-input-con">
+                    <p class="free">₹0</p>
+                    <input type="radio" class="radio" />
+                  </div> 
+                </div>
+              </div>
+              <div class="quantity-add-item">
+              <div class="q-incre-decre-con">
+                <p class="minus">-</p>
+                <p class="quantity">1</p>
+                <p class="plus">+</p>
+              </div>
+              <button class="add-item"></button>
+              </div>
+            </div>  
+          </div>
+        </div>
+        
+        <!-- Offer -->
+        <div class="offer-container-main">
+          <div class="offer-container-p">
+            <p class="offer-details"> Offer Details</p>
+            <span class="close-btn">✖</span>
+            <div class="offer-content-p">
+              <div class="offer-image-container">
+                <img src="./Image/offer-b.png" alt="offer image" class="offer-image" />
+                <div class="offer-card">
+                  <h4 class="offer-name-p">FLAT 25% OFF on Take Away Orders</h4>
+                  <p class="offer-slogan">No minimum order amount.</p>
+                </div>
+              </div> 
+              <p class="offer-des-p">Now get FLAT 25% OFF on all Take Away Orders for website and APP</p>
+              <h4 class="terms-and-condition-h">Terms and Condition</h4>
+              <ol class="terms-and-condition-list">
+                <li class="terms-and-condition-item">This Coupon code can be applied only once in 2 hours</li>
+                <li class="terms-and-condition-item">Offer Valid on BBK APP and website only</li>
+                <li class="terms-and-condition-item">This offer cannot be clubbed with any other offer.</li>
+                <li class="terms-and-condition-item">Offer not valid on combos or already discounted offer.</li>
+                <li class="terms-and-condition-item">Offer applicable on min. order amount of Rs 199 & above.</li>
+                <li class="terms-and-condition-item">Max discount Rs 3000 per order.</li>
+              </ol>  
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+
+        <div class="details-container">
+          <div class="footer-logo-container" href="#hero">
+            <img src="./Image/logo.png" class="footer-logo-img" alt="logo"/>
+            <div class="logo-name-container">
+              <p class="footer-logo-name">Bhai</p>
+              <p class="footer-logo-name">Briyani</p>
+            </div>
+          </div>
+          <p class="footer-slogan">Authentic flavors, rich spices, and the best biryani in town! 
+            Experience the taste of tradition with every bite.</p>
+          <div class="social-container">
+            <div class="social-card">
+              <img src="./Image/instagram.png" alt="Instagram" class="social-img"/>
+              <p class="social">Instagram</p>
+            </div>
+            <div class="social-card">
+              <img src="./Image/facebook.png" alt="Facebook" class="social-img"/>
+              <p class="social">Facebook</p>
+            </div>
+            <div class="social-card">
+              <img src="./Image/youtube.png" alt="Youtube" class="social-img"/>
+              <p class="social">Youtube</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-company-footer-container">
+          <ul class="about-list">
+            <li class="item-h">About</li>
+            <li class="item">About Us</li>
+            <li class="item">Our Specialties</li>
+            <li class="item">News</li>
+            <li class="item">Menu</li>
+          </ul>
+          <ul class="company-list">
+            <li class="item-h" >company</li>
+            <li class="item">Why Bhai Biryani</li>
+            <li class="item">Partner With Us</li>
+            <li class="item">FAQ</li>
+            <li class="item">Blog</li>
+          </ul>
+        </div>
+
+        <div class="support-branches-footer-container">
+          <ul class="support-list">
+            <li class="item-h">Support</li>
+            <li class="item">Account</li>
+            <li class="item">Support Center</li>
+            <li class="item">Feedback</li>
+            <li class="item">Contact Us</li>
+            <li class="item">Accessibility</li>
+          </ul>
+          <ul class="branch-list">
+            <li class="item-h">Branches</li>
+            <li class="item">Chennai</li>
+            <li class="item">Coimbatore</li>
+            <li class="item">Madrai</li>
+            <li class="item">Trichy</li>
+          </ul>
+        </div>
+
+        <div class="get-in-touch-container">
+          <h5 class="item-h">Get in Touch</h5>
+          <p class="item">Have questions or feedback? <br />We'd love to hear from you!</p>
+          <div class="send-input-container">
+            <input class="get-in-touch-input" placeholder="example@gmail.com" type="email" />
+            <img src="./Image/send.png" class="send-img" alt="send" />
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

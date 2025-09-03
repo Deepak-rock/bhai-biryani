@@ -1,29 +1,76 @@
 const menuIconEl = document.querySelector('#menuIcon');
 const navbarEl = document.querySelector('.nav-list');
-
-menuIconEl.onclick = () => {
-  menuIconEl.classList.toggle("bx-x");
-  navbarEl.classList.toggle("active");
-}
-
 const heroNav = document.querySelectorAll(".logo-img, .footer-logo-img ");
 const menuNav = document.querySelectorAll('.menu-nav');
 const menuSection = document.querySelector('#menu');
 const hero = document.querySelector('#hero');
+const search = document.querySelector('.search-container');
+const searchNav = document.querySelectorAll('.search-nav');
+const outlets = document.querySelector("#outlets");
+const outletsNav = document.querySelectorAll(".outlets-nav");
+
+outletsNav.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    outlets.style.display = 'flex';
+    hero.style.display = 'none';
+    search.style.display = 'none';
+    menuSection.style.display = 'none'
+    navbarEl.classList.toggle("active");
+    menuIconEl.classList.toggle("bx-x");
+    outlets.classList.remove("active-search");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  })
+})
+
+searchNav.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    search.style.display = 'flex';
+    hero.style.display = 'none';
+    menuSection.style.display = 'none'
+    outlets.style.display = 'none';
+    navbarEl.classList.toggle("active");
+    menuIconEl.classList.toggle("bx-x");
+    search.classList.remove("active-search");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  })
+})
+
+menuIconEl.onclick = () => {
+  menuIconEl.classList.toggle("bx-x");
+  navbarEl.classList.toggle("active");
+  hero.classList.toggle("menu-active");
+  menuSection.classList.toggle("menu-active");
+  search.classList.toggle("active-search");
+  outlets.classList.toggle("active-search");
+}
 
 menuNav.forEach(menu=> {
   menu.addEventListener('click', (e) => {
     e.preventDefault();
+    search.style.display = 'none';
     menuSection.style.display = "flex";
     hero.style.display = "none";
+    navbarEl.classList.toggle("active");
+    menuIconEl.classList.toggle("bx-x");
+    hero.classList.remove("menu-active");
+    menuSection.classList.remove("menu-active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   })
 })
 
 heroNav.forEach(logo => {
   logo.addEventListener("click", (e) => {
     e.preventDefault();
+    search.style.display = 'none';
     menuSection.style.display = "none";
     hero.style.display = "flex";
+    navbarEl.classList.remove("active");
+    menuIconEl.classList.remove("bx-x");
+    hero.classList.remove("menu-active");
+    menuSection.classList.remove("menu-active");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
 
@@ -125,7 +172,6 @@ faqContainers.forEach(faq => {
   };
 });
 
-// Add button click logic
 const addBtns = document.querySelectorAll(".add-btn");
 const orderContainer = document.querySelector(".order-container");
 const overlay = document.querySelector(".overlay");
@@ -134,11 +180,21 @@ const closeBtn = document.querySelectorAll(".close-btn");
 const offersContainer = document.querySelector('.offer-container-main');
 const offersCard = document.querySelectorAll(".offers-details-card-white, .offers-details-card-yellow");
 
+const locationBtn =  document.querySelectorAll('.order-now-btn');
+const locationContainer = document.querySelector('.location-container-main');
+const overlayOutside = document.querySelector('.overlay-o');
+
+const loginContainer =  document.querySelector('.login-container-main');
+const loginBtn =  document.querySelector('.login-btn');
+
+loginBtn.onclick = () =>{
+  loginContainer.style.display = 'block'
+}
+
 addBtns.forEach(btn => {
   btn.addEventListener("click", function () {
     const card = btn.closest(".combo-card");
 
-    // Extract product info
     const img = card.querySelector(".combo-img");
     const name = card.querySelector(".combo");
     const des = card.querySelector(".combo-des");
@@ -149,18 +205,15 @@ addBtns.forEach(btn => {
     const increQuantity = document.querySelector('.plus');
 
     const basePrice = parseInt(price.textContent.slice(1));
-    
-    // Function to update button text
+
     const updateAddBtnText = () => {
       const qty = parseInt(quantity.textContent);
       orderContainer.querySelector(".add-item").textContent = 
         `Add item ₹${basePrice * qty}`;
     };
 
-    // Reset quantity to 1 when opening popup
     quantity.textContent = "1";
 
-    // Attach listeners (avoid stacking multiple times)
     decreQuantity.onclick = () => {
       if (parseInt(quantity.textContent) > 1) {
         quantity.textContent = parseInt(quantity.textContent) - 1;
@@ -172,7 +225,6 @@ addBtns.forEach(btn => {
       updateAddBtnText();
     };
 
-    // Fill order container
     if (img) orderContainer.querySelector(".product-image").src = img.src;
     if (name) orderContainer.querySelector(".product-name").textContent = name.textContent;
     if (des) orderContainer.querySelector(".product-des").textContent = des.textContent;
@@ -181,10 +233,8 @@ addBtns.forEach(btn => {
     orderContainer.querySelector('.quantity-name').textContent = name.textContent;
     orderContainer.querySelector('.quantity-price').textContent = price.textContent;
 
-    // Initialize button with base price
     updateAddBtnText();
 
-    // Show popup
     orderContainer.style.display = "block";
     overlay.style.display = "block";
   });
@@ -197,6 +247,13 @@ offersCard.forEach(btn => {
   }
 })
 
+locationBtn.forEach(btn => {
+  btn.onclick = () => {
+    locationContainer.style.display = 'block';
+    overlayOutside.style.display  = 'block'
+  }
+})
+
 // Close popup
 closeBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -204,6 +261,9 @@ closeBtn.forEach((btn) => {
     offersContainer.style.display = 'none'
     overlay.style.display = "none";
     orderContainer.querySelector(".product-des").textContent = '';
+    overlayOutside.style.display = "none";
+    locationContainer.style.display = "none";
+    loginContainer.style.display = "none"
   });
 })
 overlay.addEventListener("click", () => {
@@ -212,5 +272,16 @@ overlay.addEventListener("click", () => {
   offersContainer.style.display = 'none'
   orderContainer.querySelector(".product-des").textContent = '';
 });
+overlayOutside.addEventListener("click", () => {
+  locationContainer.style.display = "none";
+  overlayOutside.style.display  = 'none'
+});
 
+const tabEls = document.querySelectorAll('.tab');
 
+tabEls.forEach(btn => {
+  btn.addEventListener("click", () => {
+    tabEls.forEach(tab => tab.classList.remove("active-l"));
+    btn.classList.add("active-l");
+  });
+});

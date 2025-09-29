@@ -734,7 +734,6 @@
           </ul>
         </div>
         <!-- Order -->
-
         <div class="overlay"></div>
         <div class="order-container">
           <span class="close-btn">✖</span>
@@ -794,17 +793,16 @@
                 </div>
               </div>
               <div class="quantity-add-item">
-              <div class="q-incre-decre-con">
-                <p class="minus">-</p>
-                <p class="quantity">1</p>
-                <p class="plus">+</p>
-              </div>
-              <button class="add-item"></button>
+                <div class="q-incre-decre-con">
+                  <p class="minus">-</p>
+                  <p class="quantity">1</p>
+                  <p class="plus">+</p>
+                </div>
+                <button class="add-item"></button>
               </div>
             </div>  
           </div>
         </div>
-        
         <!-- Offer -->
         <div class="offer-container-main">
           <div class="offer-container-p">
@@ -831,10 +829,132 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
+    <!-- Checkout -->
+    <section class="checkout-section">
+      <div class="checkout-res">
+        <div class="checkout-container">
+          <div class="left-checkout">
+            <div class="checkout-h-con">
+              <button class="back-btn"><img src="./Image/cart-arrow.png" alt="checkout" class="cart-arrow"/></button>
+              <p class="checkout-h">Checkout</p>
+            </div>
+            <div class="your-details-con">
+              <p class="name-number">Sri Ram, 7408564910</p>
+              <p class="your-details">Your Details</p>
+            </div>
+            <div class="your-details-con">
+              <div class="delivery-details-con">
+                <div class="delivery-details-card">
+                  <input type="radio" id="deliveryNow" checked />
+                  <label for="deliveryNow" class="delivery-n">Delivery Now</label>
+                </div>
+                <div class="delivery-details-card">
+                  <input type="radio" id="deliveryLater" />
+                  <label for="deliveryLater" class="delivery-n">Delivery Later</label>
+                </div>
+              </div>
+              <div class="choose-address">
+                <img src="./Image/cart-loc.png" alt="loc" /> 
+                <p>Choose a delivery address</p>
+              </div>
+              <div class="add-address-container">
+                <button type="button" class="add-address-btn">Add Address</button>
+              </div>
+            </div>
+            <div class="your-details-con address-con">
+              <div class="payment-card">
+                <img src="./Image/cart-walet.png" alt="card"/>
+                <p>Payment</p>
+              </div>
+              <button class="make-payment-btn">Make Payment</button>
+            </div>
+          </div>
+          <div class="right-checkout">
+            <div class="your-cart-con">
+              <p class="your-card">Your cart</p>
+              <p class="remove-card">Remove all items</p>
+            </div>
+            <div id="cart-list"></div>
+            <div class="add-anch-con">
+              <div class="anch-content-con">
+                <img src="./Image/ancp.png" alt="Anch" />
+                <div class="add-anch-content">
+                  <h5 class="a-head">Add Anch Box</h5>
+                  <p class="a-des">Our mini Angeethis provides extra 8-10 minutes of dum to your
+                    Biryani right before serving.Free with Every Biryani Order. </p>
+                </div>
+              </div>
+              <div class="box-container">
+                <div class="box"></div>
+                <p class="free-t">Free</p>
+              </div>
+            </div>
+
+            <label class="k-instruction">Add Kitchen instruction</label>
+            <input type="text" class="input-instruction" placeholder="Write instruction here"/>
+            <hr class="hr-cart"/>
+
+            <div class="add-offer-container">
+              <div class="add-offer-l">
+                <img src="./Image/offer-1.png" alt="offer" />
+                <p class="a-offer-refer">Add Offer / Refer Code</p>
+              </div>
+              <button class="apply-offer-btn">Apply Offer</button>
+            </div>
+            <div class="c-offer-card">
+              <img src="./Image/offer-2.png" alt="offer" />
+              <div class="c-offer-details">
+                <p class="c-points">1$ = 1 Points</p>
+                <h6 class="c-offer">BBk Loyalty <span class="c-points">(Your Points - 100)</span></h6>
+                <p class="c-slogan">Use Points (79.80) to get $79.80 discount</p>
+                <a class="know-more">Know more</a>
+              </div>
+              <div class="box"></div>
+            </div>
+            <div class="c-offer-card">
+              <img src="./Image/offer-3.png" alt="offer" />
+              <div class="c-offer-details">
+                <h6 class="c-offer">Make a Donation</h6>
+                <p class="c-slogan">Support Pedal-On in empowering women & fostering 
+                  environmental sustainability </p>
+                <a class="know-more">Know more</a>
+              </div>
+              <div class="box-container">
+                <div class="box blue"></div>
+                <p class="free-t">$2</p>
+              </div>
+            </div>
+
+            <div class="billing-details">
+              <h3 class="billing-details-h">Billing Details</h3>
+              <div class="billing-c sub">
+                <p class="cat-name">Sub Total</p>
+                <p class="cat-price" id="subTotal"></p>
+              </div>
+              <div class="billing-c">
+                <p class="cat-name">Delivery Charges</p>
+                <p class="cat-price">$39</p>
+              </div>
+              <div class="billing-c">
+                <p class="cat-name">Packing Charges</p>
+                <p class="cat-price">$25</p>
+              </div>
+              <div class="billing-c">
+                <p class="cat-name">CGST(2.5%)</p>
+                <p class="cat-price">$21.55</p>
+              </div>
+              <div class="billing-c">
+                <p class="cat-name">SGST(2.5%)</p>
+                <p class="cat-price">$21.55</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Locations -->
     <div class="overlay-o"></div>
     <div class="location-container-main">
@@ -855,14 +975,15 @@
     </div>
 
     <!-- Login  -->
-    <div class="login-container-main">
+    <div class="login-container-main" id="loginContainer">
       <div class="login-container-p">
         <p class="sign-in">Sign In / Sign Up</p>
         <span class="close-btn">✖</span>
-
-        <label class="label-sign-in" for="mobileNum">PLease enter your mobile number</label> 
-        <input class="mobile-num" placeholder="Enter here" id="mobileNum" type="tel"/>
-        <button class="next-btn">NEXT</button>
+        <form id="mobileForm">
+          <label class="label-sign-in" for="mobileNum">PLease enter your mobile number</label> 
+          <input class="mobile-num" placeholder="e.g. +91 98765 43210" id="mobileNum" type="tel" pattern="^\+?[0-9]{10,15}$"  required/>
+          <button class="next-btn" type="submit">NEXT</button>
+        </form>
       </div>
     </div>
 
@@ -967,6 +1088,7 @@
         </div>
     </div>
     </div>
+
     <!-- Outlets -->
     <div id="outlets" class="outlets-section">
       <div class="res-outlets">
@@ -1272,7 +1394,244 @@
         </div>
       </div>
     </div>
+
+    <!-- Book a table -->
+    <div class="book-a-table-container">
+      <div class="res-book">
+        <div class="legend">
+          <p class="book-heading"><span class="available"></span> Available</p>
+          <p class="book-heading"><span class="booked"></span> Booked</p>
+        </div>
+        <div class="book-left-right">
+          <div class="left-panel">
+            <div id="seatDisplay"></div>
+          </div>
+          <!-- Right Panel -->
+          <div class="right-panel">
+            <div class="seat-layout">
+
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">2</p>
+                </div>
+
+                <div class="table" data-table="Table 1">
+                  Table 1
+                  <div class="seat top" data-seat="Table 1 - Seat 1"></div>
+                  <div class="seat bottom" data-seat="Table 1 - Seat 2"></div>
+                </div>
+                
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">3</p>
+                </div>
+
+                <div class="table" data-table="Table 2">
+                  Table 2
+                  <div class="seat top" data-seat="Table 2 - Seat 1"></div>
+                  <div class="seat bottom" data-seat="Table 2 - Seat 2"></div>
+                  <div class="seat right" data-seat="Table 2 - Seat 3"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">4</p>
+                </div>
+
+                <div class="table" data-table="Table 3">
+                  Table 3
+                  <div class="seat top" data-seat="Table 3 - Seat 1"></div>
+                  <div class="seat bottom" data-seat="Table 3 - Seat 2"></div>
+                  <div class="seat right" data-seat="Table 3 - Seat 3"></div>
+                  <div class="seat left" data-seat="Table 3 - Seat 4"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">4</p>
+                </div>
+
+                <div class="table" data-table="Table 4">
+                  Table 4
+                  <div class="seat top" data-seat="Table 4 - Seat 1"></div>
+                  <div class="seat bottom" data-seat="Table 4 - Seat 2"></div>
+                  <div class="seat right" data-seat="Table 4 - Seat 3"></div>
+                  <div class="seat left" data-seat="Table 4 - Seat 4"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">6</p>
+                </div>
+
+                <div class="table-2 booked" data-table="Table 5">
+                  Table 5
+                  <div class="seat top booked" data-seat="Table 5 - Seat 1"></div>
+                  <div class="seat bottom booked" data-seat="Table 5 - Seat 2"></div>
+                  <div class="seat right-t2-1 booked" data-seat="Table 5 - Seat 3"></div>
+                  <div class="seat right-t2-2 booked" data-seat="Table 5 - Seat 4"></div>
+                  <div class="seat left-t2-1 booked" data-seat="Table 5 - Seat 5"></div>
+                  <div class="seat left-t2-2 booked" data-seat="Table 5 - Seat 6"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">7</p>
+                </div>
+
+                <div class="table-3 booked" data-table="Table 6">
+                  Table 6
+                  <div class="seat top booked " data-seat="Table 6 - Seat 1"></div>
+                  <div class="seat right-t3-1 booked " data-seat="Table 6 - Seat 2"></div>
+                  <div class="seat right-t3-2 booked " data-seat="Table 6 - Seat 3"></div>
+                  <div class="seat right-t3-3 booked " data-seat="Table 6 - Seat 4"></div>
+                  <div class="seat left-t3-1 booked " data-seat="Table 6 - Seat 5"></div>
+                  <div class="seat left-t3-2 booked " data-seat="Table 6 - Seat 6"></div>
+                  <div class="seat left-t3-3 booked " data-seat="Table 6 - Seat 7"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">8</p>
+                </div>
+
+                <div class="table-4 booked" data-table="Table 7">
+                  Table 7
+                  <div class="seat top-t4-1 booked " data-seat="Table 7 - Seat 1"></div>
+                  <div class="seat top-t4-2 booked " data-seat="Table 7 - Seat 2"></div>
+                  <div class="seat top-t4-3 booked " data-seat="Table 7 - Seat 3"></div>
+                  <div class="seat right booked " data-seat="Table 7 - Seat 4"></div>
+                  <div class="seat bottom-t4-1 booked " data-seat="Table 7 - Seat 5"></div>
+                  <div class="seat bottom-t4-2 booked " data-seat="Table 7 - Seat 6"></div>
+                  <div class="seat bottom-t4-3 booked " data-seat="Table 7 - Seat 7"></div>
+                  <div class="seat left booked " data-seat="Table 7 - Seat 8"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">8</p>
+                </div>
+
+                <div class="table-4 booked" data-table="Table 8">
+                  Table 8
+                  <div class="seat top-t4-1 booked " data-seat="Table 8 - Seat 1"></div>
+                  <div class="seat top-t4-2 booked " data-seat="Table 8 - Seat 2"></div>
+                  <div class="seat top-t4-3 booked " data-seat="Table 8 - Seat 3"></div>
+                  <div class="seat right booked " data-seat="Table 8 - Seat 4"></div>
+                  <div class="seat bottom-t4-1 booked " data-seat="Table 8 - Seat 5"></div>
+                  <div class="seat bottom-t4-2 booked " data-seat="Table 8 - Seat 6"></div>
+                  <div class="seat bottom-t4-3 booked " data-seat="Table 8 - Seat 7"></div>
+                  <div class="seat left booked " data-seat="Table 8 - Seat 8"></div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="round-seat-layout">
+
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">2</p>
+                </div>
+
+                <div class="round-table" data-table="Round table 1">
+                  Round 
+                  <br /> Seat 1
+                  <div class="seat top" data-seat="Round table 1 - Seat 1"></div>
+                  <div class="seat bottom" data-seat="Round table 1 - Seat 2"></div>
+                </div>
+                
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">4</p>
+                </div>
+
+                <div class="round-table booked" data-table="Round table 2">
+                  Round 
+                  <br /> Seat 2
+                  <div class="seat top booked" data-seat="Round table 2 - Seat 1"></div>
+                  <div class="seat bottom booked" data-seat="Round table 2 - Seat 2"></div>
+                  <div class="seat right booked" data-seat="Round table 2 - Seat 3"></div>
+                  <div class="seat left booked" data-seat="Round table 2 - Seat 4"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">4</p>
+                </div>
+
+                <div class="round-table booked" data-table="Round table 3">
+                  Round
+                  <br /> Seat 3
+                  <div class="seat top booked" data-seat="Round table 3 - Seat 1"></div>
+                  <div class="seat bottom booked" data-seat="Round table 3 - Seat 2"></div>
+                  <div class="seat right booked" data-seat="Round table 3 - Seat 3"></div>
+                  <div class="seat left booked" data-seat="Round table 3 - Seat 4"></div>
+                </div>
+
+              </div>
+              <div class="table-card">
+
+                <div class="no-of-seats-con">
+                  <img src="./Image/no-of-seats.png" alt="no-of-seats"/>
+                  <p class="no-of-seats">8</p>
+                </div>
+
+                <div class="round-table booked" data-table="Round table 4">
+                  Round 
+                  <br /> Seat 4
+                  <div class="seat top booked" data-seat="Round table 4 - Seat 1"></div>
+                  <div class="seat bottom booked" data-seat="Round table 4 - Seat 2"></div>
+                  <div class="seat right booked" data-seat="Round table 4 - Seat 3"></div>
+                  <div class="seat left booked" data-seat="Round table 4 - Seat 4"></div>
+                  <div class="seat top-2 booked" data-seat="Round table 4 - Seat 5"></div>
+                  <div class="seat bottom-2 booked" data-seat="Round table 4 - Seat 6"></div>
+                  <div class="seat top-3 booked" data-seat="Round table 4 - Seat 7"></div>
+                  <div class="seat bottom-3 booked" data-seat="Round table 4 - Seat 8"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="confirm-btn" onclick="confirmSelection()">Confirm</button>
+      </div>
+    </div>
     <!-- Footer -->
+
     <footer>
       <div class="footer-container">
 
